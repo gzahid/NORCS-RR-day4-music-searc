@@ -4,20 +4,19 @@ function GalleryItem(props){
     let [view, setView] = useState(false)
     //set style
     const simpleStyle = {
-        'width': '90%',
-        'max-width':'250px',
+        'width': '25vw',
         'height': 'auto',
+        'min-height':'200px',
         'border': '1px solid black',
-        'margin': '0 5px',
-        'padding': '5px'
+        'margin': '2px',
+        'vertical-align':'top'
     }
     
     const detailStyle = {
-        'width': '80%',
+        'width': '25vw',
         'height': 'auto',
         'border': '1px solid black',
-        'margin': '0 5px',
-        'padding': '5px'
+        'margin': '2px'
     }
 
     const simpleView = () => {
@@ -52,7 +51,6 @@ function GalleryItem(props){
     }
     return (
         <div onClick={() => setView(!view)} style={{'display': 'inline-block'}}>
-            <p>One Gallery Item</p>
             {view ? detailView() : simpleView()}
         </div>
     )
