@@ -1,3 +1,8 @@
+
+ ## clone https://github.com/HackerUSA-CE/RR-Improve-a-Music-Library-Interface.git
+ ## run nodemon to start port 4000
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
